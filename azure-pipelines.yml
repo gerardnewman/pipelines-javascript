@@ -6,6 +6,11 @@
 trigger:
 - master
 
+variables: 
+    ## Add this under variables section in the pipeline
+    azureSubscription: 'newman.gerard@gmail.com'
+    appName: 'RESOLVER-API'
+
 pool:
   vmImage: 'ubuntu-latest'
 
