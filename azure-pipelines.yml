@@ -8,7 +8,7 @@ trigger:
 
 variables: 
     ## Add this under variables section in the pipeline
-    azureSubscription: 'newman.gerard@gmail.com'
+    azureSubscription: 'Free Trial'
     appName: 'RESOLVER-API'
 
 pool:
@@ -27,7 +27,7 @@ steps:
 
 - task: AzureFunctionApp@1 # Add this at the end of your file
   inputs:
-    azureSubscription: 'newman.gerard@gmail.com'
+    azureSubscription: 'Free Trial'
     appType: functionAppLinux
     appName: $(appName)
     package: $(System.ArtifactsDirectory)/**/*.zip
