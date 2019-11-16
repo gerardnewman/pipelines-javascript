@@ -27,7 +27,7 @@ steps:
 
 - task: AzureFunctionApp@1 # Add this at the end of your file
   inputs:
-    azureSubscription: 'f5d3cfbd-cffd-4ebf-be47-2283d0e854b2'
+    azureSubscription: 'newman.gerard@gmail.com'
     appType: functionAppLinux
     appName: $(appName)
     package: $(System.ArtifactsDirectory)/**/*.zip
